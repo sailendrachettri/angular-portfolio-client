@@ -8,5 +8,5 @@ import { LargeHeadingWrapperComponent } from '../../../utilities/large-heading-w
   templateUrl: './about-me.component.html',
 })
 export class AboutMeComponent {
-  meImage: string = 'assets/backgrounds/about_img.jpg';
+  meImage: string = 'assets/backgrounds/bg2.png';
 }
