@@ -11,5 +11,5 @@ import { octMarkGithub } from '@ng-icons/octicons';
 export class LandingPageComponent {
   bg = 'assets/backgrounds/bg.png';
   github_url: string = 'https://github.com/sailendrachettri';
-  resume: string = 'assets/pdfs/resume.pdf';
+  resume: string = 'https://drive.google.com/file/d/10V7j5lAsDgffbvn6j9cSjWwGLQLbY-nz/view?usp=sharing';
 }
