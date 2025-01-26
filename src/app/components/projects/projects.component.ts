@@ -39,7 +39,7 @@ export class ProjectsComponent {
   img9_check_list = 'assets/projects/09_check_list.jpg';
 
   // PROJECTS DEMO LINK
-  waadiyon: string = 'https://waadiyon.com';
+  waadiyon: string = 'https://waadiyon.onrender.com';
   emailDb: string = 'https://emailsdb.onrender.com';
   foodPanda: string = 'https://foodpandaz.onrender.com';
   compressor: string = 'https://reducer.onrender.com';
