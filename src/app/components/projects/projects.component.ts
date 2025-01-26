@@ -38,6 +38,8 @@ export class ProjectsComponent {
   img8_text_analyzer = 'assets/projects/08_text_ana.jpg';
   img9_check_list = 'assets/projects/09_check_list.jpg';
 
+  npmPackagesUrl:string = 'https://www.npmjs.com/~bytesberry';
+
   // PROJECTS DEMO LINK
   waadiyon: string = 'https://waadiyon.onrender.com';
   emailDb: string = 'https://emailsdb.onrender.com';
@@ -48,4 +50,5 @@ export class ProjectsComponent {
   generalKnowledge: string = 'https://gk-site.netlify.app';
   textAnalyzer: string = 'https://tanalyzer-site.netlify.app';
   checklist: string = 'https://checklist-site.netlify.app';
+  
 }

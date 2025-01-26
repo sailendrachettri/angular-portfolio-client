@@ -19,6 +19,7 @@ export class SideMenuComponent {
   linkedIn: string = 'https://linkedin.com/in/sailendrachettri';
   leetcodeUrl: string = 'https://leetcode.com/sailendraz';
   codeforcesUrl: string = 'https://codeforces.com/profile/sailendraz';
+  npmPackagesUrl:string = 'https://www.npmjs.com/~bytesberry';
 
   // Listining the menu open state when hanburger click and closing according
   @Input()
