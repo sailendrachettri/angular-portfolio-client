@@ -16,8 +16,8 @@ import { RouterLink, RouterLinkActive } from '@angular/router';
 export class SideMenuComponent {
   logo: string = 'assets/icons/Z.png';
   githubUrl: string = 'https://github.com/sailendrachettri';
-  leetcodeUrl: string = 'https://leetcode.com/sailendraz';
   linkedIn: string = 'https://linkedin.com/in/sailendrachettri';
+  leetcodeUrl: string = 'https://leetcode.com/sailendraz';
   codeforcesUrl: string = 'https://codeforces.com/profile/sailendraz';
 
   // Listining the menu open state when hanburger click and closing according
