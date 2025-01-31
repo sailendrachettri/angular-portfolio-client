@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
-import { LargeHeadingWrapperComponent } from '../../../utilities/large-heading-wrapper/large-heading-wrapper.component';
-import { SmallHeadingWrapperComponent } from '../../../utilities/small-heading-wrapper/small-heading-wrapper.component';
 import { Router, RouterLink, RouterLinkActive } from '@angular/router';
 import { NgIf } from '@angular/common';
+import { LargeHeadingWrapperComponent } from 'src/utilities/large-heading-wrapper/large-heading-wrapper.component';
+import { SmallHeadingWrapperComponent } from 'src/utilities/small-heading-wrapper/small-heading-wrapper.component';
 
 @Component({
   selector: 'app-projects',
@@ -38,7 +38,7 @@ export class ProjectsComponent {
   img8_text_analyzer = 'assets/projects/08_text_ana.jpg';
   img9_check_list = 'assets/projects/09_check_list.jpg';
 
-  npmPackagesUrl:string = 'https://www.npmjs.com/~bytesberry';
+  npmPackagesUrl: string = 'https://www.npmjs.com/~bytesberry';
 
   // PROJECTS DEMO LINK
   waadiyon: string = 'https://waadiyon.onrender.com';
@@ -50,5 +50,4 @@ export class ProjectsComponent {
   generalKnowledge: string = 'https://gk-site.netlify.app';
   textAnalyzer: string = 'https://tanalyzer-site.netlify.app';
   checklist: string = 'https://checklist-site.netlify.app';
-  
 }

@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
-import { SideMenuComponent } from '../../../../utilities/side-menu/side-menu.component';
 import { NgIf } from '@angular/common';
 import { RouterLink, RouterLinkActive } from '@angular/router';
+import { SideMenuComponent } from 'src/utilities/side-menu/side-menu.component';
 
 @Component({
   selector: 'app-mobile-navbar',

@@ -24,6 +24,7 @@
     "@ng-icons/octicons": "^30.2.0",
     "@ngneat/overview": "6.1.1",
     "@ngxpert/hot-toast": "^4.1.1",
+    "axios": "^1.7.9",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.15.0"

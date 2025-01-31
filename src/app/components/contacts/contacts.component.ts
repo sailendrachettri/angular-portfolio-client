@@ -8,6 +8,8 @@ import {
 } from '@angular/forms';
 import { Router, RouterLink, RouterLinkActive } from '@angular/router';
 import { HotToastService } from '@ngxpert/hot-toast';
+import { ADD_CONTACT_URL } from 'src/app/api/api_routing_urls';
+import { AxiosService } from 'src/app/api/axios.service';
 
 @Component({
   selector: 'app-contact-form',
@@ -15,7 +17,11 @@ import { HotToastService } from '@ngxpert/hot-toast';
   templateUrl: './contacts.component.html',
 })
 export class ContactsComponent {
-  constructor(private fb: FormBuilder, private router: Router) {
+  constructor(
+    private fb: FormBuilder,
+    private router: Router,
+    private axiosService: AxiosService
+  ) {
     this.contactForm = this.fb.group({
       fullName: [''],
       email: ['', [Validators.required, Validators.email]],
@@ -33,13 +39,26 @@ export class ContactsComponent {
   //  Email newsletter subscription
   private toastService = inject(HotToastService);
   contactForm: FormGroup;
-  submitForm() {
-    if (this.contactForm.valid) {
-      console.log('Form submitted:', this.contactForm.value);
-      this.toastService.success('Thank you. I will get back to you shortly!');
-      this.contactForm.reset();
-    } else {
-      this.toastService.error('oops! Please try again later');
+  async submitForm() {
+    try {
+      if (this.contactForm.valid) {
+        console.log('Form submitted:', this.contactForm.value);
+
+        const response = await this.axiosService.axiosPrivate.post(
+          ADD_CONTACT_URL,
+          this.contactForm.value
+        );
+        console.log('Data: ', response.data);
+        this.toastService.success('Thank you. I will get back to you shortly!');
+        // Optionally reset form
+        this.contactForm.reset();
+        this.router.navigate(['/']);
+      } else {
+        this.toastService.error('Oops! Please check your form and try again.');
+      }
+    } catch (error) {
+      console.error('Not able to send data:', error);
+      this.toastService.error('Network Error! Please try again later.');
     }
   }
 }
