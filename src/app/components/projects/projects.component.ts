@@ -28,6 +28,7 @@ export class ProjectsComponent {
   }
 
   // LINKS FOR PROJECT ASSETS
+  img10_markdown = 'assets/projects/markdown-editor.png';
   img1_waadiyon = 'assets/projects/01_waadiyo.png';
   img2_emaildb = 'assets/projects/02_emaildb.jpg';
   img3_food_panda = 'assets/projects/03_food_panda.png';
@@ -41,6 +42,7 @@ export class ProjectsComponent {
   npmPackagesUrl: string = 'https://www.npmjs.com/~bytesberry';
 
   // PROJECTS DEMO LINK
+  markdownEditor: string = 'https://sailendraz-markdown-editor.netlify.app';
   waadiyon: string = 'https://waadiyon.onrender.com';
   emailDb: string = 'https://emailsdb.onrender.com';
   foodPanda: string = 'https://foodpandaz.onrender.com';
