@@ -17,205 +17,29 @@
 
     <!-- projects -->
     <div class="flex flex-col items-center lg:space-y-10">
-      <div class="flex flex-wrap justify-center 2xl:justify-between gap-10">
-        <a
-          [href]="markdownEditor"
-          target="_blank"
-          class="hover:scale-105 transition-transform duration-75 cursor-pointer"
+      <!-- FILTERS -->
+      <div class="flex flex-wrap gap-3 justify-center mb-6">
+        <button
+          *ngFor="let filter of filters"
+          (click)="setFilter(filter.value)"
+          class="px-5 text-xs py-2 rounded-full border transition-all duration-200"
+          [ngClass]="{
+            'bg-secondary text-white border-secondary':
+              activeFilter === filter.value,
+            'border-slate-600 text-slate-400 hover:border-secondary hover:text-secondary':
+              activeFilter !== filter.value
+          }"
         >
-          <div class="absolute bg-secondary text-primary">
-            <span class="p-3 text-sm">ReactJS, Tawilwind, NPM Marked</span>
-          </div>
-          <img
-            [src]="img10_markdown"
-            alt="Project"
-            class="rounded-sm h-48 w-72 object-cover"
-          />
-          <h2
-            class="lg:text-xl capitalize text-center p-2 border-2 border-slate-700 border-t-0"
-          >
-            Markdown Editor
-          </h2>
-        </a>
-        <a
-          [href]="waadiyon"
-          target="_blank"
-          class="hover:scale-105 transition-transform duration-75 cursor-pointer"
-        >
-          <div class="absolute bg-secondary text-primary">
-            <span class="p-3 text-sm">ReactJS, Tawilwind</span>
-          </div>
-          <img
-            [src]="img1_waadiyon"
-            alt="Project"
-            class="rounded-sm h-48 w-72 object-cover"
-          />
-          <h2
-            class="lg:text-xl capitalize text-center p-2 border-2 border-slate-700 border-t-0"
-          >
-            Waadiyon - tours & travels
-          </h2>
-        </a>
-        <a
-          [href]="emailDb"
-          target="_blank"
-          class="hover:scale-105 transition-transform duration-75 cursor-pointer"
-        >
-          <div class="absolute bg-secondary text-primary">
-            <span class="p-3 text-sm">ReactJS, NodeJS</span>
-          </div>
-          <img
-            [src]="img2_emaildb"
-            alt="Project"
-            class="rounded-sm h-48 w-72 object-cover"
-          />
-          <h2
-            class="lg:text-xl capitalize text-center p-2 border-2 border-slate-700 border-t-0"
-          >
-            emailDB
-          </h2>
-        </a>
-        <a
-          [href]="foodPanda"
-          target="_blank"
-          class="hover:scale-105 transition-transform duration-75 cursor-pointer"
-        >
-          <div class="absolute bg-secondary text-primary">
-            <span class="p-3 text-sm">Bootstrap, ReactJS</span>
-          </div>
-          <img
-            [src]="img3_food_panda"
-            alt="Project"
-            class="rounded-sm h-48 w-72 object-cover"
-          />
-          <h2
-            class="lg:text-xl capitalize text-center p-2 border-2 border-slate-700 border-t-0"
-          >
-            FoodPandaZ
-          </h2>
-        </a>
-        <a
-          [href]="compressor"
-          target="_blank"
-          class="hover:scale-105 transition-transform duration-75 cursor-pointer"
-        >
-          <div class="absolute bg-secondary text-primary">
-            <span class="p-3 text-sm">ReactJS, Bootstrap</span>
-          </div>
-          <img
-            [src]="img4_compressor"
-            alt="Project"
-            class="rounded-sm h-48 w-72 object-cover"
-          />
-          <h2
-            class="lg:text-xl capitalize text-center p-2 border-2 border-slate-700 border-t-0"
-          >
-            Images compressor
-          </h2>
-        </a>
-        <a
-          [href]="blog"
-          target="_blank"
-          class="hover:scale-105 transition-transform duration-75 cursor-pointer"
-        >
-          <div class="absolute bg-secondary text-primary">
-            <span class="p-3 text-sm">Express, NodeJS</span>
-          </div>
-          <img
-            [src]="img5_blog"
-            alt="Project"
-            class="rounded-sm h-48 w-72 object-cover"
-          />
-          <h2
-            class="lg:text-xl capitalize text-center p-2 border-2 border-slate-700 border-t-0"
-          >
-            Codebinds Blogs
-          </h2>
-        </a>
-        <a
-          [href]="gkTraveller"
-          target="_blank"
-          class="hover:scale-105 transition-transform duration-75 cursor-pointer"
-        >
-          <div class="absolute bg-secondary text-primary">
-            <span class="p-3 text-sm">Bootstrap, ReactJS</span>
-          </div>
-          <img
-            [src]="img6_gktraveller"
-            alt="Project"
-            class="rounded-sm h-48 w-72 object-cover"
-          />
-          <h2
-            class="lg:text-xl capitalize text-center p-2 border-2 border-slate-700 border-t-0"
-          >
-            Gangtok Traveller
-          </h2>
-        </a>
-        <a
-          [href]="generalKnowledge"
-          target="_blank"
-          class="hover:scale-105 transition-transform duration-75 cursor-pointer"
-        >
-          <div class="absolute bg-secondary text-primary">
-            <span class="p-3 text-sm">HTML & CSS, JavaScript</span>
-          </div>
-          <img
-            [src]="img7_gk"
-            alt="Project"
-            class="rounded-sm h-48 w-72 object-cover"
-          />
-          <h2
-            class="lg:text-xl capitalize text-center p-2 border-2 border-slate-700 border-t-0"
-          >
-            General knowledge
-          </h2>
-        </a>
-        <a
-          [href]="textAnalyzer"
-          target="_blank"
-          class="hover:scale-105 transition-transform duration-75 cursor-pointer"
-        >
-          <div class="absolute bg-secondary text-primary">
-            <span class="p-3 text-sm">HTML & CSS</span>
-          </div>
-          <img
-            [src]="img8_text_analyzer"
-            alt="Project"
-            class="rounded-sm h-48 w-72 object-cover"
-          />
-          <h2
-            class="lg:text-xl capitalize text-center p-2 border-2 border-slate-700 border-t-0"
-          >
-            Text Analyzer
-          </h2>
-        </a>
-        <a
-          [href]="checklist"
-          target="_blank"
-          class="hover:scale-105 transition-transform duration-75 cursor-pointer"
-        >
-          <div class="absolute bg-secondary text-primary">
-            <span class="p-3 text-sm">HTML & CSS, JavaScript</span>
-          </div>
-          <img
-            [src]="img9_check_list"
-            alt="Project"
-            class="rounded-sm h-48 w-72 object-cover"
-          />
-          <h2
-            class="lg:text-xl capitalize text-center p-2 border-2 border-slate-700 border-t-0"
-          >
-            Checklist
-          </h2>
-        </a>
+          {{ filter.label }}
+        </button>
       </div>
 
-      <div>
-        <a [href]="npmPackagesUrl" class="border hover:border-secondary text-secondary  hover:text-primary hover:bg-secondary cursor-pointer block mt-10 py-5  px-8 w-full">
-          <span class="font-medium rounded-sm">
-            NPM / Yarn  Utility Packages
-          </span>
-          </a>
+      <!-- PROJECT GRID -->
+      <div class="flex flex-wrap justify-center 2xl:justify-between gap-10">
+        <app-project-card
+          *ngFor="let project of filteredProjects"
+          [project]="project"
+        ></app-project-card>
       </div>
     </div>
 
@@ -248,5 +72,5 @@
       </div>
     </div>
   </div>
-  <div class="border-b border-ternary"></div>
+  <div class="border-b border-ternary pt-10"></div>
 </div>

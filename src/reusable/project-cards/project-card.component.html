@@ -1,0 +1,21 @@
+<a
+  [href]="project.url"
+  target="_blank"
+  class="hover:scale-105 transition-transform duration-75 cursor-pointer relative block"
+>
+  <div class="absolute bg-secondary text-primary z-10">
+    <span class="p-3 text-sm">{{ project.tech }}</span>
+  </div>
+
+  <img
+    [src]="project.image"
+    alt="Project"
+    class="rounded-sm h-48 w-72 object-cover"
+  />
+
+  <h2
+    class="lg:text-xl capitalize text-center p-2 border-2 border-slate-700 border-t-0"
+  >
+    {{ project.title }}
+  </h2>
+</a>
