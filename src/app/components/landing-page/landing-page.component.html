@@ -1,7 +1,15 @@
 <div>
   <div class="bg-primary py-10">
+    <!-- Image -->
+    <div class="sm:hidden flex items-center justify-center pb-6">
+      <img
+        [src]="bg"
+        alt="Background Image"
+        class="w-[50%]"
+      />
+    </div>
     <div class="flex flex-row justify-between items-center w-full">
-      <div class="max-w-[70%]">
+      <div class="sm:max-w-[70%]">
         <!-- Heading -->
         <div class="text-white">
           <div class="text-[2rem] xl:text-[3rem] font-bold uppercase">
@@ -15,14 +23,28 @@
         </div>
 
         <!-- Description -->
-        <div class="text-white">
-          <div
-            class="mt-5 sm:mt-10 text-sm sm:text-[1rem] xl:text-xl text-slate-500"
-          >
-            
-I am a software developer with experience in building full-stack applications, APIs, and database management using technologies like JavaScript, React, Node.js, and PostgreSQL. I thrive in collaborative environments, delivering seamless solutions while continually learning and adapting to new challenges.
-          </div>
-        </div>
+       <div class="text-white">
+  <div
+    class="mt-5 sm:mt-10 text-sm sm:text-[1rem] xl:text-xl text-slate-500 leading-relaxed"
+  >
+    I am a software developer with experience in building full-stack
+    applications, APIs, and database management using technologies like
+
+    <span class="text-white font-medium">
+      {{ typedText }}
+      <span
+        *ngIf="!isCompleted"
+        class="animate-pulse"
+      >
+        |
+      </span>
+    </span>
+
+    . I thrive in collaborative environments, delivering seamless solutions
+    while continually learning and adapting to new challenges.
+  </div>
+</div>
+
 
         <!-- Buttons -->
         <div class="flex space-x-5 lg:space-x-10 mt-10">
@@ -69,15 +91,14 @@ I am a software developer with experience in building full-stack applications, A
         </div>
       </div>
 
-
-        <!-- Image -->
-        <div class="hidden md:block">
-          <img
-            [src]="bg"
-            alt="Background Image"
-            class="w-[80%] lg:h-80 h-[80%] lg:w-80"
-          />
-        </div>
+      <!-- Image -->
+      <div class="hidden sm:block">
+        <img
+          [src]="bg"
+          alt="Background Image"
+          class="w-[80%] lg:h-80 h-[80%] lg:w-80"
+        />
+      </div>
     </div>
   </div>
 </div>

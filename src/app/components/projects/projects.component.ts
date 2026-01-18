@@ -84,7 +84,7 @@ export class ProjectsComponent {
       title: 'Office Connect',
       url: this.officeConnect,
       image: this.img11_office_connect,
-      tech: 'ElectronJS, Tailwind, Asp .NET',
+      tech: 'ElectronJS, SignalR, Asp .NET',
       type: 'windows'
     },
     {

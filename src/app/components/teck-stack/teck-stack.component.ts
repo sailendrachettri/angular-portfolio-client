@@ -12,6 +12,9 @@ export class TeckStackComponent {
   skills = [
     'JavaScript',
     'ReactJs',
+    'ElectronJS',
+    '.NET',
+    'Tauri',
     'Angular',
     'Express',
     'JWT',
