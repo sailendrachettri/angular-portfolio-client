@@ -1,4 +1,18 @@
 <div>
   <!-- Render all the componenet here -->
+  <!-- Navbars -->
+  <ng-content>
+    <div class="hidden lg:block">
+      <app-navbar-desktop></app-navbar-desktop>
+    </div>
+
+    <div class="lg:hidden">
+      <app-mobile-navbar></app-mobile-navbar>
+    </div>
+  </ng-content>
   <router-outlet />
+  <!-- outlet  -->
+  <div class="px-[1rem] sm:px-[2rem] lg:px-[7rem] bg-primary2">
+    <app-footer></app-footer>
+  </div>
 </div>

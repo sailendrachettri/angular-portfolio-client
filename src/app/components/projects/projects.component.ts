@@ -61,7 +61,7 @@ export class ProjectsComponent {
   textAnalyzer: string = 'https://tanalyzer-site.netlify.app';
   checklist: string = 'https://checklist-site.netlify.app';
   officeConnect: string = 'https://github.com/sailendrachettri/office-connect-app';
-  devWellbeing: string = 'https://github.com/sailendrachettri/dev-wellbeing/tree/main/apps';
+  devWellbeing: string = 'https://sailendra.onrender.com/windows-application/dev-wellbeing';
 
    filters: { label: string; value: ProjectType | 'all' }[] = [
     { label: 'All', value: 'all' },

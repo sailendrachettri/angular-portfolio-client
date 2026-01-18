@@ -5,6 +5,7 @@ import { NewsletterDashboardComponent } from './areas/auth/modules/newsletter-da
 import { SystemAdminHomeComponent } from './areas/auth/system-admin/system-admin-home/system-admin-home.component';
 import { ProjectsComponent } from './components/projects/projects.component';
 import { ContactsComponent } from './components/contacts/contacts.component';
+import { DevWellbeingComponent } from './areas/public/dev-wellbeing/dev-wellbeing.component';
 
 export const routes: Routes = [
   // ------------------------------------------------Public Route------------------------------------------------
@@ -19,6 +20,10 @@ export const routes: Routes = [
   {
     path: 'contacts',
     component: ContactsComponent,
+  },
+  {
+    path: 'windows-application/dev-wellbeing',
+    component: DevWellbeingComponent,
   },
   {
     path: 'projects',

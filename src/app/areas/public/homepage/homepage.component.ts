@@ -11,13 +11,11 @@ import { ProjectsComponent } from 'src/app/components/projects/projects.componen
 import { ServicesComponent } from 'src/app/components/services/services.component';
 import { TeckStackComponent } from 'src/app/components/teck-stack/teck-stack.component';
 import { ScrollToTopComponent } from 'src/utilities/scroll-to-top/scroll-to-top.component';
+import { MarqueeComponent } from "src/reusable/marquee/marquee.component";
 
 @Component({
   selector: 'app-homepage',
   imports: [
-    NavbarDesktopComponent,
-    MobileNavbarComponent,
-    FooterComponent,
     ScrollToTopComponent,
     LandingPageComponent,
     ServicesComponent,
@@ -26,7 +24,8 @@ import { ScrollToTopComponent } from 'src/utilities/scroll-to-top/scroll-to-top.
     TeckStackComponent,
     NewslettersComponent,
     ProjectsComponent,
-  ],
+    MarqueeComponent
+],
   templateUrl: './homepage.component.html',
 })
 export class HomepageComponent {

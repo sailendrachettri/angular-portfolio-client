@@ -41,3 +41,22 @@
     radial-gradient(ellipse at bottom, #e80975, transparent);
   cursor: grabbing;
 }
+
+
+
+/* -----------------------------marquee------------------------ */
+@keyframes marquee {
+  0% {
+    transform: translateX(40%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.animate-marquee {
+  display: inline-block;
+  white-space: nowrap;
+  animation: marquee 10s linear infinite;
+}
+
