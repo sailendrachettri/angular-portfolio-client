@@ -16,7 +16,7 @@ export class LandingPageComponent implements OnInit, OnDestroy {
     'https://drive.google.com/file/d/10V7j5lAsDgffbvn6j9cSjWwGLQLbY-nz/view?usp=sharing';
 
    fullText =
-    'JavaScript, React, .NET, Electron, Tauri, AngularJS, Node.js, and PostgreSQL';
+    'JavaScript, React, .NET, Electron, Tauri, AngularJS, Node.js, & PostgreSQL';
 
   typedText = '';
   isCompleted = false;
