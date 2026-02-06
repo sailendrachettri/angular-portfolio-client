@@ -8,5 +8,5 @@ import { RouterLink } from "@angular/router";
   templateUrl: './marquee.component.html'
 })
 export class MarqueeComponent {
-    devWellbeingIcon : string = 'assets/icons/dev_wellbeing.png'
+    newGif : string = 'assets/gif/new-gif.gif'
 }

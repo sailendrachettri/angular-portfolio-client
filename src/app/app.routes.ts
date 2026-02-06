@@ -7,6 +7,7 @@ import { ProjectsComponent } from './components/projects/projects.component';
 import { ContactsComponent } from './components/contacts/contacts.component';
 import { DevWellbeingComponent } from './areas/public/dev-wellbeing/dev-wellbeing.component';
 import { NeoPolarCamComponent } from './areas/public/new-polar-cam/neo-polar-cam.component';
+import { ExpenseXComponent } from './areas/public/expensex/expensex.component';
 
 export const routes: Routes = [
   // ------------------------------------------------Public Route------------------------------------------------
@@ -29,6 +30,10 @@ export const routes: Routes = [
   {
     path: 'android-application/neo-polar-cam',
     component: NeoPolarCamComponent,
+  },
+  {
+    path: 'android-application/expensex',
+    component: ExpenseXComponent,
   },
   {
     path: 'projects',

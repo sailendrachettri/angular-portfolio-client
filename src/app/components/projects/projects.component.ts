@@ -47,6 +47,7 @@ export class ProjectsComponent {
   img11_office_connect = 'assets/projects/office_connect.png';
   img12_dev_wellbeing = 'assets/projects/dev_wellbeing.png';
   img13_neo_polar_cam = 'assets/projects/neo-polar-cam.png';
+  img14_expensex = 'assets/projects/expensex.png';
 
   npmPackagesUrl: string = 'https://www.npmjs.com/~bytesberry';
 
@@ -64,6 +65,7 @@ export class ProjectsComponent {
   officeConnect: string = 'https://github.com/sailendrachettri/office-connect-app';
   devWellbeing: string = 'https://sailendra.onrender.com/windows-application/dev-wellbeing';
   newPolarCam: string = '/android-application/neo-polar-cam';
+  expenseX: string = '/android-application/expensex';
 
    filters: { label: string; value: ProjectType | 'all' }[] = [
     { label: 'All', value: 'all' },
@@ -80,6 +82,13 @@ export class ProjectsComponent {
       title: 'NeoPolar Cam',
       url: this.newPolarCam,
       image: this.img13_neo_polar_cam,
+      tech: 'Flutter',
+      type: 'android'
+    },
+    {
+      title: 'ExpenseX',
+      url: this.expenseX,
+      image: this.img14_expensex,
       tech: 'Flutter',
       type: 'android'
     },

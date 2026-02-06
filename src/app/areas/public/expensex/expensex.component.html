@@ -1,0 +1,152 @@
+<div class="min-h-screen bg-slate-950 text-slate-100">
+  <!-- HERO SECTION -->
+  <section
+    class="max-w-7xl mx-auto px-6 py-20 grid lg:grid-cols-2 gap-12 items-center"
+  >
+    <!-- Text -->
+    <div>
+      <!-- Hero Image -->
+      <div class="relative lg:hidden -top-10 z-10">
+        <img
+          src="{{ collageImg }}"
+          alt="Dev Wellbeing App"
+          class="rounded-xl z-10"
+        />
+      </div>
+
+      <h1 class="text-3xl sm:text-4xl xl:text-5xl font-bold leading-tight">
+       ExpenseX
+      </h1>
+
+      <p class="mt-6 text-slate-400 text-base sm:text-lg">
+        ExpenseX is a sleek and intuitive expense tracker designed to help you
+        take full control of your finances. With ExpenseX, you can effortlessly
+        log your daily expenses, categorize them, and monitor your spending
+        trends over time.
+      </p>
+
+      <p class="mt-4 text-slate-400">
+        The app offers insightful visual reports, including monthly bar graphs,
+        category-wise breakdowns with percentages, and a clear overview of your
+        total expenses. Whether you want to track personal spending, manage
+        budgets, or stay on top of borrowings, ExpenseX provides a simple,
+        user-friendly interface that makes financial management easy and
+        stress-free.
+      </p>
+
+      <!-- Buttons -->
+      <div class="mt-8 flex flex-wrap gap-2 sm:gap-4 text-xs sm:text-sm">
+        <a
+          href="{{ downloadUrl }}"
+          target="_blank"
+          class="px-6 py-3 rounded-lg bg-indigo-600 hover:bg-indigo-500 transition font-medium"
+        >
+          Download for Android
+        </a>
+
+        <a
+          href="{{ sourceCodeUrl }}"
+          target="_blank"
+          class="px-6 py-3 rounded-lg border border-slate-700 hover:bg-slate-800 transition font-medium text-xs sm:text-sm"
+        >
+          Source Code
+        </a>
+      </div>
+    </div>
+
+    <!-- Hero Image -->
+    <div class="relative hidden lg:block">
+      <img
+        src="{{ collageImg }}"
+        alt="Dev Wellbeing App"
+        class="rounded-xl z-10"
+      />
+    </div>
+  </section>
+
+  <!-- FEATURES SECTION -->
+  <section id="features" class="max-w-7xl mx-auto px-6 pb-20">
+    <h2 class="text-2xl sm:text-3xl font-semibold text-center">Key Features</h2>
+
+    <div class="mt-12 grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div class="p-6 bg-slate-900 rounded-xl border border-slate-800">
+        <h3 class="text-lg font-semibold">Expense Tracking</h3>
+        <p class="mt-3 text-slate-400 text-sm">
+          Record daily expenses quickly and stay in control of your spending.
+        </p>
+      </div>
+
+      <div class="p-6 bg-slate-900 rounded-xl border border-slate-800">
+        <h3 class="text-lg font-semibold">Borrowing & Lending</h3>
+        <p class="mt-3 text-slate-400 text-sm">
+          Track borrowed and lent money with clear records and balances.
+        </p>
+      </div>
+
+      <div class="p-6 bg-slate-900 rounded-xl border border-slate-800">
+        <h3 class="text-lg font-semibold">Category-wise Reports</h3>
+        <p class="mt-3 text-slate-400 text-sm">
+          View total expenses by category for better financial insights.
+        </p>
+      </div>
+
+      <div class="p-6 bg-slate-900 rounded-xl border border-slate-800">
+        <h3 class="text-lg font-semibold">Weekly, Monthly & Yearly Reports</h3>
+        <p class="mt-3 text-slate-400 text-sm">
+          Analyze your spending trends across different time periods.
+        </p>
+      </div>
+
+      <div class="p-6 bg-slate-900 rounded-xl border border-slate-800">
+        <h3 class="text-lg font-semibold">Simple & Fast</h3>
+        <p class="mt-3 text-slate-400 text-sm">
+          Clean interface designed for quick entries and smooth navigation.
+        </p>
+      </div>
+
+      <div class="p-6 bg-slate-900 rounded-xl border border-slate-800">
+        <h3 class="text-lg font-semibold">Offline & Secure</h3>
+        <p class="mt-3 text-slate-400 text-sm">
+          Works fully offline — your financial data stays on your device.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SCREENSHOTS -->
+  <section class="max-w-7xl mx-auto px-6 py-20">
+    <h2 class="text-2xl sm:text-3xl font-semibold text-center pb-10">
+      Screenshots
+    </h2>
+
+    <div class="flex items-center justify-center flex-wrap gap-8">
+      <div>
+        <img
+          src="{{ image1 }}"
+          alt="Timeline View"
+          class="rounded-lg border border-slate-800 h-[30rem]"
+        />
+        <p class="mt-3 text-center text-slate-400 text-sm">Report View</p>
+      </div>
+
+      <div>
+        <img
+          src="{{ image2 }}"
+          alt="Today View"
+          class="rounded-lg border border-slate-800 h-[30rem]"
+        />
+        <p class="mt-3 text-center text-slate-400 text-sm">
+          Daily Expense View
+        </p>
+      </div>
+      <div>
+        <img
+          src="{{ image3 }}"
+          alt="Today View"
+          class="rounded-lg border border-slate-800 h-[30rem]"
+        />
+        <p class="mt-3 text-center text-slate-400 text-sm">Borrow View</p>
+      </div>
+    </div>
+  </section>
+</div>
