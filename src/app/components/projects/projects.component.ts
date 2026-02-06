@@ -67,9 +67,10 @@ export class ProjectsComponent {
 
    filters: { label: string; value: ProjectType | 'all' }[] = [
     { label: 'All', value: 'all' },
-    { label: 'Websites', value: 'website' },
     { label: 'Windows Apps', value: 'windows' },
-    { label: 'Android Apps', value: 'android' }
+    { label: 'Websites', value: 'website' },
+    { label: 'Android Apps', value: 'android' },
+    { label: 'Archives', value: 'archive' }
   ];
 
   activeFilter: ProjectType | 'all' = 'all';
@@ -115,14 +116,14 @@ export class ProjectsComponent {
       url: this.emailDb,
       image: this.img2_emaildb,
       tech: 'ReactJS, NodeJS',
-      type: 'website'
+      type: 'archive'
     },
     {
       title: 'FoodPandaZ',
       url: this.foodPanda,
       image: this.img3_food_panda,
       tech: 'Bootstrap, ReactJS',
-      type: 'website'
+      type: 'archive'
     },
     {
       title: 'Images Compressor',
@@ -136,21 +137,21 @@ export class ProjectsComponent {
       url: this.blog,
       image: this.img5_blog,
       tech: 'Express, NodeJS',
-      type: 'website'
+      type: 'archive'
     },
     {
       title: 'Gangtok Traveller',
       url: this.gkTraveller,
       image: this.img6_gktraveller,
       tech: 'Bootstrap, ReactJS',
-      type: 'website'
+      type: 'archive'
     },
     {
       title: 'General Knowledge',
       url: this.generalKnowledge,
       image: this.img7_gk,
       tech: 'HTML & CSS, JavaScript',
-      type: 'website'
+      type: 'archive'
     },
     {
       title: 'Text Analyzer',
@@ -169,7 +170,7 @@ export class ProjectsComponent {
   ];
 
    get filteredProjects(): Project[] {
-    if (this.activeFilter === 'all') return this.projects;
+    if (this.activeFilter === 'all') return this.projects.filter(p => p.type !== 'archive');
     return this.projects.filter(p => p.type === this.activeFilter);
   }
 

@@ -1,6 +1,6 @@
 import { Component, Input } from '@angular/core';
 
-export type ProjectType = 'windows' | 'website' | 'mobile' | 'other' | 'android' | 'ios' | 'linux';
+export type ProjectType = 'windows' | 'website' | 'mobile' | 'other' | 'android' | 'ios' | 'linux' | 'archive';
 
 export interface Project {
   title: string;
