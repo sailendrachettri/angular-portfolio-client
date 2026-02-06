@@ -13,6 +13,7 @@ export class NavbarDesktopComponent {
   linkedInUrl: string = 'https://linkedin.com/in/sailendrachettri';
   logo: string = 'assets/icons/Z.png';
 
+
   scrollToElement(id: string): void {
     const element = document.getElementById(id);
     if (element) {

@@ -30,8 +30,22 @@
             routerLink="projects"
             routerLinkActive="active"
             ariaCurrentWhenActive="page"
-            >Projects</a
           >
+            <div class="flex items-center justify-center">
+              <div>Projects</div>
+              <div>
+                <span class="relative flex ml-2">
+                  <span
+                    class="animate-ping absolute inline-flex h-2.5 w-2.5 rounded-full bg-secondary opacity-75"
+                  ></span>
+                  <span
+                    class="relative inline-flex rounded-full h-2.5 w-2.5 text-white bg-secondary items-center justify-center text-xs font-medium"
+                  >
+                  </span>
+                </span>
+              </div>
+            </div>
+          </a>
         </li>
         <!-- <li class="text-xl font-medium py-2 text-white cursor-pointer hover:text-secondary">
           <a (click)="scrollToElement('services-section')">Services</a>
