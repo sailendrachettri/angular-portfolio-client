@@ -46,6 +46,7 @@ export class ProjectsComponent {
   img10_markdown = 'assets/projects/markdown-editor.png';
   img11_office_connect = 'assets/projects/office_connect.png';
   img12_dev_wellbeing = 'assets/projects/dev_wellbeing.png';
+  img13_neo_polar_cam = 'assets/projects/neo-polar-cam.png';
 
   npmPackagesUrl: string = 'https://www.npmjs.com/~bytesberry';
 
@@ -62,17 +63,25 @@ export class ProjectsComponent {
   checklist: string = 'https://checklist-site.netlify.app';
   officeConnect: string = 'https://github.com/sailendrachettri/office-connect-app';
   devWellbeing: string = 'https://sailendra.onrender.com/windows-application/dev-wellbeing';
+  newPolarCam: string = '/android-application/neo-polar-cam';
 
    filters: { label: string; value: ProjectType | 'all' }[] = [
     { label: 'All', value: 'all' },
     { label: 'Websites', value: 'website' },
     { label: 'Windows Apps', value: 'windows' },
-    // { label: 'Mobile Apps', value: 'mobile' }
+    { label: 'Android Apps', value: 'android' }
   ];
 
   activeFilter: ProjectType | 'all' = 'all';
 
   projects: Project[] = [
+    {
+      title: 'NeoPolar Cam',
+      url: this.newPolarCam,
+      image: this.img13_neo_polar_cam,
+      tech: 'Flutter',
+      type: 'android'
+    },
     {
       title: 'Dev Wellbeing',
       url: this.devWellbeing,

@@ -4,7 +4,6 @@ import { Component } from '@angular/core';
   selector: 'app-dev-wellbeing',
   imports: [],
   templateUrl: './dev-wellbeing.component.html',
-  styleUrl: './dev-wellbeing.component.css'
 })
 export class DevWellbeingComponent {
   timelineViewImg : string = 'assets/dev-wellbeings/timeline_view.png'

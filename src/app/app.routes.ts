@@ -6,6 +6,7 @@ import { SystemAdminHomeComponent } from './areas/auth/system-admin/system-admin
 import { ProjectsComponent } from './components/projects/projects.component';
 import { ContactsComponent } from './components/contacts/contacts.component';
 import { DevWellbeingComponent } from './areas/public/dev-wellbeing/dev-wellbeing.component';
+import { NeoPolarCamComponent } from './areas/public/new-polar-cam/neo-polar-cam.component';
 
 export const routes: Routes = [
   // ------------------------------------------------Public Route------------------------------------------------
@@ -24,6 +25,10 @@ export const routes: Routes = [
   {
     path: 'windows-application/dev-wellbeing',
     component: DevWellbeingComponent,
+  },
+  {
+    path: 'android-application/neo-polar-cam',
+    component: NeoPolarCamComponent,
   },
   {
     path: 'projects',
