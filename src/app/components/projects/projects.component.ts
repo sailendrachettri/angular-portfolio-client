@@ -48,6 +48,7 @@ export class ProjectsComponent {
   img12_dev_wellbeing = 'assets/projects/dev_wellbeing.png';
   img13_neo_polar_cam = 'assets/projects/neo-polar-cam.png';
   img14_expensex = 'assets/projects/expensex.png';
+  img15_sharedNotes = 'assets/projects/sharednotes.png';
 
   npmPackagesUrl: string = 'https://www.npmjs.com/~bytesberry';
 
@@ -66,6 +67,7 @@ export class ProjectsComponent {
   devWellbeing: string = 'https://sailendra.onrender.com/windows-application/dev-wellbeing';
   newPolarCam: string = '/android-application/neo-polar-cam';
   expenseX: string = '/android-application/expensex';
+  sharedNotes: string = '/windows-application/sharednotes';
 
    filters: { label: string; value: ProjectType | 'all' }[] = [
     { label: 'All', value: 'all' },
@@ -78,6 +80,13 @@ export class ProjectsComponent {
   activeFilter: ProjectType | 'all' = 'all';
 
   projects: Project[] = [
+    {
+      title: 'Shared Notes',
+      url: this.sharedNotes,
+      image: this.img15_sharedNotes,
+      tech: 'Tauri, ReactJs, .NET, PostgreSQL',
+      type: 'windows'
+    },
     {
       title: 'NeoPolar Cam',
       url: this.newPolarCam,

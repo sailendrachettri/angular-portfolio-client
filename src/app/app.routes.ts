@@ -8,6 +8,7 @@ import { ContactsComponent } from './components/contacts/contacts.component';
 import { DevWellbeingComponent } from './areas/public/dev-wellbeing/dev-wellbeing.component';
 import { NeoPolarCamComponent } from './areas/public/new-polar-cam/neo-polar-cam.component';
 import { ExpenseXComponent } from './areas/public/expensex/expensex.component';
+import { SharednotesComponent } from './areas/public/sharednotes/sharednotes.component';
 
 export const routes: Routes = [
   // ------------------------------------------------Public Route------------------------------------------------
@@ -28,9 +29,14 @@ export const routes: Routes = [
     component: DevWellbeingComponent,
   },
   {
+    path: 'windows-application/sharednotes',
+    component: SharednotesComponent,
+  },
+  {
     path: 'android-application/neo-polar-cam',
     component: NeoPolarCamComponent,
   },
+
   {
     path: 'android-application/expensex',
     component: ExpenseXComponent,
