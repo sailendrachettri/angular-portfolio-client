@@ -49,6 +49,7 @@ export class ProjectsComponent {
   img13_neo_polar_cam = 'assets/projects/neo-polar-cam.png';
   img14_expensex = 'assets/projects/expensex.png';
   img15_sharedNotes = 'assets/projects/sharednotes.png';
+  img16_pushGrids = 'assets/projects/push_grid.png';
 
   npmPackagesUrl: string = 'https://www.npmjs.com/~bytesberry';
 
@@ -68,13 +69,15 @@ export class ProjectsComponent {
   newPolarCam: string = '/android-application/neo-polar-cam';
   expenseX: string = '/android-application/expensex';
   sharedNotes: string = '/windows-application/sharednotes';
+  pushGrid: string = 'https://sailendrachettri.github.io/push-grid';
 
    filters: { label: string; value: ProjectType | 'all' }[] = [
     { label: 'All', value: 'all' },
     { label: 'Windows Apps', value: 'windows' },
     { label: 'Websites', value: 'website' },
     { label: 'Android Apps', value: 'android' },
-    { label: 'Archives', value: 'archive' }
+    { label: 'Archives', value: 'archive' },
+    { label: 'Web Games', value: 'web-games' }
   ];
 
   activeFilter: ProjectType | 'all' = 'all';
@@ -184,6 +187,13 @@ export class ProjectsComponent {
       image: this.img9_check_list,
       tech: 'HTML & CSS, JavaScript',
       type: 'website'
+    },
+    {
+      title: 'Push Grid',
+      url: this.pushGrid,
+      image: this.img16_pushGrids,
+      tech: 'HTML & CSS, JavaScript',
+      type: 'web-games'
     }
   ];
 

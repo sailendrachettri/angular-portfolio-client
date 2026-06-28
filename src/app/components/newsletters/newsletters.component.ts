@@ -25,19 +25,24 @@ export class NewslettersComponent {
     try {
       if (this.email.valid) {
         console.log('Email:', this.email.value);
-        const data: any = { email: this.email.value };
-        const response = await this.axiosService.axiosPrivate.post(
-          ADD_NEWSLETTER_SUBSCRIPTION_EMAIL_URL,
-          data
-        );
-
-        console.log({ response });
-
-        this.email.reset('');
+        
         this.toastService.success('Newsletter subscribed successfully!');
+
+        return;
+
+        // const data: any = { email: this.email.value };
+        // const response = await this.axiosService.axiosPrivate.post(
+        //   ADD_NEWSLETTER_SUBSCRIPTION_EMAIL_URL,
+        //   data
+        // );
+
+        // console.log({ response });
+
+        // this.email.reset('');
+        // this.toastService.success('Newsletter subscribed successfully!');
       } else {
         console.log('Invalid email');
-        this.toastService.error('oops! Please try again later');
+        this.toastService.error('oops! Please enter a valid email.');
       }
     } catch (error) {
       console.log('Invalid email');
