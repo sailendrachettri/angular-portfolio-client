@@ -13,7 +13,7 @@ export class LandingPageComponent implements OnInit, OnDestroy {
   bg = 'assets/backgrounds/bg.png';
   github_url: string = 'https://github.com/sailendrachettri';
   resume: string =
-    'https://drive.google.com/file/d/10V7j5lAsDgffbvn6j9cSjWwGLQLbY-nz/view?usp=sharing';
+    'https://drive.google.com/drive/folders/1Dx2u1fTHMvZvEn1qMGPioPh8yldyMcJ4?usp=sharing';
 
    fullText =
     'JavaScript, React, .NET, Electron, Tauri, AngularJS, Node.js, & PostgreSQL';
