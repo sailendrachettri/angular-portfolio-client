@@ -50,6 +50,7 @@ export class ProjectsComponent {
   img14_expensex = 'assets/projects/expensex.png';
   img15_sharedNotes = 'assets/projects/sharednotes.png';
   img16_pushGrids = 'assets/projects/push_grid.png';
+  img17_autoHideNav = 'assets/projects/auto-hide-nav.png';
 
   npmPackagesUrl: string = 'https://www.npmjs.com/~bytesberry';
 
@@ -70,9 +71,11 @@ export class ProjectsComponent {
   expenseX: string = '/android-application/expensex';
   sharedNotes: string = '/windows-application/sharednotes';
   pushGrid: string = 'https://sailendrachettri.github.io/push-grid';
+  autoHideNavUrl: string = 'https://sailendrachettri.github.io/auto-hiding-navigation-bar';
 
    filters: { label: string; value: ProjectType | 'all' }[] = [
     { label: 'All', value: 'all' },
+    { label: 'Front-end Animations', value: 'frontend' },
     { label: 'Windows Apps', value: 'windows' },
     { label: 'Websites', value: 'website' },
     { label: 'Android Apps', value: 'android' },
@@ -84,116 +87,133 @@ export class ProjectsComponent {
 
   projects: Project[] = [
     {
+      title: 'Auto Hide Navbar',
+      url: this.autoHideNavUrl,
+      image: this.img17_autoHideNav,
+      tech: 'GSAP, HTML, CSS, JS',
+      type: 'frontend',
+      date: "Oct 2026"
+    },
+    {
       title: 'Shared Notes',
       url: this.sharedNotes,
       image: this.img15_sharedNotes,
       tech: 'Tauri, ReactJs, .NET, PostgreSQL',
-      type: 'windows'
+      type: 'windows',
+      date: "Feb 2026"
     },
-    {
-      title: 'NeoPolar Cam',
-      url: this.newPolarCam,
-      image: this.img13_neo_polar_cam,
-      tech: 'Flutter',
-      type: 'android'
-    },
+    
     {
       title: 'ExpenseX',
       url: this.expenseX,
       image: this.img14_expensex,
       tech: 'Flutter',
-      type: 'android'
+      type: 'android',
+      date: "Jan 2026"
     },
     {
       title: 'Dev Wellbeing',
       url: this.devWellbeing,
       image: this.img12_dev_wellbeing,
       tech: 'Tauri, Rust, ReactJs',
-      type: 'windows'
+      type: 'windows',
+      date: "Jan 2026"
     },
     {
       title: 'Office Connect',
       url: this.officeConnect,
       image: this.img11_office_connect,
       tech: 'ElectronJS, SignalR, Asp .NET',
-      type: 'windows'
+      type: 'windows',
+      date: "Dec 2025"
     },
     {
       title: 'Markdown Editor',
       url: this.markdownEditor,
       tech: 'ReactJS, Tailwind, NPM Marked',
       image: this.img10_markdown,
-      type: 'website'
+      type: 'website',
+      date: ""
     },
     {
       title: 'Waadiyon - Tours & Travels',
       url: this.waadiyon,
       image: this.img1_waadiyon,
       tech: 'ReactJS, Tailwind',
-      type: 'website'
+      type: 'website',
+      date: ""
     },
     {
       title: 'emailDB',
       url: this.emailDb,
       image: this.img2_emaildb,
       tech: 'ReactJS, NodeJS',
-      type: 'archive'
+      type: 'archive',
+      date: ""
     },
     {
       title: 'FoodPandaZ',
       url: this.foodPanda,
       image: this.img3_food_panda,
       tech: 'Bootstrap, ReactJS',
-      type: 'archive'
+      type: 'archive',
+      date: ""
     },
     {
       title: 'Images Compressor',
       url: this.compressor,
       image: this.img4_compressor,
       tech: 'ReactJS, Bootstrap',
-      type: 'website'
+      type: 'archive',
+      date: ""
     },
     {
       title: 'Codebinds Blogs',
       url: this.blog,
       image: this.img5_blog,
       tech: 'Express, NodeJS',
-      type: 'archive'
+      type: 'archive',
+      date: ""
     },
     {
       title: 'Gangtok Traveller',
       url: this.gkTraveller,
       image: this.img6_gktraveller,
       tech: 'Bootstrap, ReactJS',
-      type: 'archive'
+      type: 'archive',
+      date: ""
     },
     {
       title: 'General Knowledge',
       url: this.generalKnowledge,
       image: this.img7_gk,
       tech: 'HTML & CSS, JavaScript',
-      type: 'archive'
+      type: 'archive',
+      date: ""
     },
     {
       title: 'Text Analyzer',
       url: this.textAnalyzer,
       image: this.img8_text_analyzer,
       tech: 'HTML & CSS',
-      type: 'website'
+      type: 'archive',
+      date: ""
     },
     {
       title: 'Checklist',
       url: this.checklist,
       image: this.img9_check_list,
       tech: 'HTML & CSS, JavaScript',
-      type: 'website'
+      type: 'archive',
+      date: ""
     },
     {
       title: 'Push Grid',
       url: this.pushGrid,
       image: this.img16_pushGrids,
       tech: 'HTML & CSS, JavaScript',
-      type: 'web-games'
+      type: 'web-games',
+      date: ""
     }
   ];
 

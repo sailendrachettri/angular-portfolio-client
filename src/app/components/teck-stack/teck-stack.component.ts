@@ -28,6 +28,7 @@ export class TeckStackComponent {
     'Tailwind CSS',
     'C & C++',
     'Bootstrap',
+    "GSAP",
     'Material UI',
     'Netlify & Renders',
     'DigitalOcean',
