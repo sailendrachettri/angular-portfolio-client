@@ -51,6 +51,7 @@ export class ProjectsComponent {
   img15_sharedNotes = 'assets/projects/sharednotes.png';
   img16_pushGrids = 'assets/projects/push_grid.png';
   img17_autoHideNav = 'assets/projects/auto-hide-nav.png';
+  img18_horizontalScrollEffect = 'assets/projects/scroll-smart.png';
 
   npmPackagesUrl: string = 'https://www.npmjs.com/~bytesberry';
 
@@ -72,6 +73,7 @@ export class ProjectsComponent {
   sharedNotes: string = '/windows-application/sharednotes';
   pushGrid: string = 'https://sailendrachettri.github.io/push-grid';
   autoHideNavUrl: string = 'https://sailendrachettri.github.io/auto-hiding-navigation-bar';
+  horizontalScrollEffectUrl: string = 'https://sailendrachettri.github.io/horizontal-effect-on-scroll-gsap';
 
    filters: { label: string; value: ProjectType | 'all' }[] = [
     { label: 'All', value: 'all' },
@@ -86,6 +88,14 @@ export class ProjectsComponent {
   activeFilter: ProjectType | 'all' = 'all';
 
   projects: Project[] = [
+    {
+      title: 'Horizontal Scroll',
+      url: this.horizontalScrollEffectUrl,
+      image: this.img18_horizontalScrollEffect,
+      tech: 'GSAP, HTML, CSS, JS',
+      type: 'frontend',
+      date: "Oct 2026"
+    },
     {
       title: 'Auto Hide Navbar',
       url: this.autoHideNavUrl,
